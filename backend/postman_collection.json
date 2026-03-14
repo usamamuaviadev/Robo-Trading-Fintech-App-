@@ -1,0 +1,1055 @@
+{
+	"info": {
+		"_postman_id": "robo-advisor-api",
+		"name": "Robo Advisor API - Complete Collection",
+		"description": "Complete API collection for Robo Advisor backend including all new features\n\n📋 QUICK START FLOW:\n1. Send OTP → 2. Verify OTP → 3. Register (save token!) → 4. Use token for all other APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/health",
+					"host": ["{{base_url}}"],
+					"path": ["health"]
+				}
+			}
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "1. Send OTP (Phone) - START HERE",
+					"request": {
+						"description": "Step 1: Send OTP to phone number for registration\n\nAfter this, you'll receive OTP code (check console in demo mode)",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"phoneNumber\": \"+966501234567\",\n  \"purpose\": \"registration\",\n  \"type\": \"phone\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/send-otp",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "send-otp"]
+						}
+					}
+				},
+				{
+					"name": "2. Verify OTP",
+					"request": {
+						"description": "Step 2: Verify the OTP code you received\n\nUse the code from Step 1 (demo mode: use 12345)",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"phoneNumber\": \"+966501234567\",\n  \"code\": \"12345\",\n  \"purpose\": \"registration\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/verify-otp",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "verify-otp"]
+						}
+					}
+				},
+				{
+					"name": "Check Phone (Debug)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"phoneNumber\": \"+966501234567\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/check-phone",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "check-phone"]
+						}
+					}
+				},
+				{
+					"name": "3. Register - SAVE TOKEN!",
+					"request": {
+						"description": "Step 3: Register new user\n\n⚠️ IMPORTANT: Copy the 'token' from response and paste it into 'auth_token' variable!\n\nAfter this, you can use all protected APIs.",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"phoneNumber\": \"+966501234567\",\n  \"password\": \"Test@1234\",\n  \"code\": \"12345\",\n  \"email\": \"user@example.com\",\n  \"investmentProfile\": {\n    \"primaryGoal\": \"retirement\",\n    \"withdrawalTimeline\": \"3to5\",\n    \"monthlyDepositDescription\": \"medium\",\n    \"investmentObjective\": \"growth\",\n    \"riskTolerance\": \"longterm\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/register",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "register"]
+						}
+					}
+				},
+				{
+					"name": "Login (Alternative to Register)",
+					"request": {
+						"description": "For existing users: Login with phone and password\n\n⚠️ IMPORTANT: Copy the 'token' from response and paste it into 'auth_token' variable!",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"phoneNumber\": \"+966501234567\",\n  \"password\": \"Test@1234\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/login",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "login"]
+						}
+					}
+				},
+				{
+					"name": "Get Current User (After Login/Register)",
+					"request": {
+						"description": "Get your user profile data\n\nRequires: auth_token (set after login/register)",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/auth/me",
+							"host": ["{{base_url}}"],
+							"path": ["api", "auth", "me"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "User Management",
+			"item": [
+				{
+					"name": "Update Profile (Name & Email)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"fullName\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user/profile",
+							"host": ["{{base_url}}"],
+							"path": ["api", "user", "profile"]
+						}
+					}
+				},
+				{
+					"name": "Verify Identity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nationalId\": \"1234567890\",\n  \"code\": \"12345\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user/verify-identity",
+							"host": ["{{base_url}}"],
+							"path": ["api", "user", "verify-identity"]
+						}
+					}
+				},
+				{
+					"name": "Link Bank Account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"iban\": \"SA0380000000608010167519\",\n  \"wahiqNumber\": \"123456789\",\n  \"code\": \"12345\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user/link-bank",
+							"host": ["{{base_url}}"],
+							"path": ["api", "user", "link-bank"]
+						}
+					}
+				},
+				{
+					"name": "Update Funding Preferences",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"frequency\": \"monthly\",\n  \"times\": \"once-per-month\",\n  \"amount\": 120000\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/user/funding-preferences",
+							"host": ["{{base_url}}"],
+							"path": ["api", "user", "funding-preferences"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Wallet & Escrow",
+			"item": [
+				{
+					"name": "Get Wallet Balance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/wallet/balance",
+							"host": ["{{base_url}}"],
+							"path": ["api", "wallet", "balance"]
+						}
+					}
+				},
+				{
+					"name": "Create Deposit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 1000,\n  \"method\": \"bank_transfer\",\n  \"description\": \"Initial deposit\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/wallet/deposit",
+							"host": ["{{base_url}}"],
+							"path": ["api", "wallet", "deposit"]
+						}
+					}
+				},
+				{
+					"name": "Create Withdrawal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 500,\n  \"method\": \"iban\",\n  \"description\": \"Withdrawal\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/wallet/withdraw",
+							"host": ["{{base_url}}"],
+							"path": ["api", "wallet", "withdraw"]
+						}
+					}
+				},
+				{
+					"name": "Get Transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/wallet/transactions?page=1&limit=20",
+							"host": ["{{base_url}}"],
+							"path": ["api", "wallet", "transactions"],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Trades",
+			"item": [
+				{
+					"name": "Execute Trade (Buy)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"assetId\": \"asset-123\",\n  \"assetSymbol\": \"ARAMCO\",\n  \"assetName\": \"Saudi Aramco\",\n  \"type\": \"buy\",\n  \"quantity\": 10,\n  \"price\": 50.25\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/trades/execute",
+							"host": ["{{base_url}}"],
+							"path": ["api", "trades", "execute"]
+						}
+					}
+				},
+				{
+					"name": "Execute Trade (Sell)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"assetId\": \"asset-123\",\n  \"assetSymbol\": \"ARAMCO\",\n  \"assetName\": \"Saudi Aramco\",\n  \"type\": \"sell\",\n  \"quantity\": 5,\n  \"price\": 52.00\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/trades/execute",
+							"host": ["{{base_url}}"],
+							"path": ["api", "trades", "execute"]
+						}
+					}
+				},
+				{
+					"name": "Get Trades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/trades?page=1&limit=20&status=executed",
+							"host": ["{{base_url}}"],
+							"path": ["api", "trades"],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "status",
+									"value": "executed"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Trade Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/trades/:tradeId",
+							"host": ["{{base_url}}"],
+							"path": ["api", "trades", ":tradeId"],
+							"variable": [
+								{
+									"key": "tradeId",
+									"value": "TRADE_ID_HERE"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Settle Trade",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/trades/:tradeId/settle",
+							"host": ["{{base_url}}"],
+							"path": ["api", "trades", ":tradeId", "settle"],
+							"variable": [
+								{
+									"key": "tradeId",
+									"value": "TRADE_ID_HERE"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Market Data",
+			"item": [
+				{
+					"name": "Get Asset Price",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/market/prices/:symbol",
+							"host": ["{{base_url}}"],
+							"path": ["api", "market", "prices", ":symbol"],
+							"variable": [
+								{
+									"key": "symbol",
+									"value": "ARAMCO"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Multiple Prices",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"symbols\": [\"ARAMCO\", \"SABIC\", \"STC\"]\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/market/prices/batch",
+							"host": ["{{base_url}}"],
+							"path": ["api", "market", "prices", "batch"]
+						}
+					}
+				},
+				{
+					"name": "Get Market Summary",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/market/summary",
+							"host": ["{{base_url}}"],
+							"path": ["api", "market", "summary"]
+						}
+					}
+				},
+				{
+					"name": "Check Halal Status (Zoya)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/market/halal-check/:symbol?assetType=stock",
+							"host": ["{{base_url}}"],
+							"path": ["api", "market", "halal-check", ":symbol"],
+							"query": [
+								{
+									"key": "assetType",
+									"value": "stock"
+								}
+							],
+							"variable": [
+								{
+									"key": "symbol",
+									"value": "ARAMCO"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Filter Halal Assets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"assets\": [\n    {\"symbol\": \"ARAMCO\", \"assetType\": \"stock\"},\n    {\"symbol\": \"SABIC\", \"assetType\": \"stock\"}\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/market/halal-filter",
+							"host": ["{{base_url}}"],
+							"path": ["api", "market", "halal-filter"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Calculate Risk Score",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"answers\": {\n    \"primaryGoal\": \"retirement\",\n    \"withdrawalTimeline\": \"gt5\",\n    \"monthlyDepositDescription\": \"medium\",\n    \"investmentObjective\": \"growth\",\n    \"riskTolerance\": \"longterm\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/calculate-risk",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "calculate-risk"]
+						}
+					}
+				},
+				{
+					"name": "Get All Prebuilt Profiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/profiles",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "profiles"]
+						}
+					}
+				},
+				{
+					"name": "Get Specific Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/profiles/:profileName",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "profiles", ":profileName"],
+							"variable": [
+								{
+									"key": "profileName",
+									"value": "balanced"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Portfolio Composition",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/composition",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "composition"]
+						}
+					}
+				},
+				{
+					"name": "Analyze Diversification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/diversification",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "diversification"]
+						}
+					}
+				},
+				{
+					"name": "Check Rebalancing",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/portfolio/rebalancing?threshold=5",
+							"host": ["{{base_url}}"],
+							"path": ["api", "portfolio", "rebalancing"],
+							"query": [
+								{
+									"key": "threshold",
+									"value": "5"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "Get Notifications",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/notifications?page=1&limit=20&unread=true",
+							"host": ["{{base_url}}"],
+							"path": ["api", "notifications"],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "unread",
+									"value": "true"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Mark Notification as Read",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/notifications/:notificationId/read",
+							"host": ["{{base_url}}"],
+							"path": ["api", "notifications", ":notificationId", "read"],
+							"variable": [
+								{
+									"key": "notificationId",
+									"value": "NOTIFICATION_ID_HERE"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Mark All as Read",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/notifications/read-all",
+							"host": ["{{base_url}}"],
+							"path": ["api", "notifications", "read-all"]
+						}
+					}
+				},
+				{
+					"name": "Delete Notification",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/notifications/:notificationId",
+							"host": ["{{base_url}}"],
+							"path": ["api", "notifications", ":notificationId"],
+							"variable": [
+								{
+									"key": "notificationId",
+									"value": "NOTIFICATION_ID_HERE"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Kids Wallets",
+			"item": [
+				{
+					"name": "Create Minor Wallet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"minorName\": \"Ahmed\",\n  \"minorBirthDate\": \"2015-05-15\",\n  \"spendingLimit\": 1000,\n  \"monthlyAllowance\": 500\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/minor-wallets/create",
+							"host": ["{{base_url}}"],
+							"path": ["api", "minor-wallets", "create"]
+						}
+					}
+				},
+				{
+					"name": "Get Minor Wallets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/minor-wallets",
+							"host": ["{{base_url}}"],
+							"path": ["api", "minor-wallets"]
+						}
+					}
+				},
+				{
+					"name": "Get Minor Wallet Details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/minor-wallets/:id",
+							"host": ["{{base_url}}"],
+							"path": ["api", "minor-wallets", ":id"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MINOR_WALLET_ID_HERE"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Update Minor Wallet",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"spendingLimit\": 1500,\n  \"monthlyAllowance\": 600\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/minor-wallets/:id",
+							"host": ["{{base_url}}"],
+							"path": ["api", "minor-wallets", ":id"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MINOR_WALLET_ID_HERE"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Fund Minor Wallet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"amount\": 500\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/minor-wallets/:id/fund",
+							"host": ["{{base_url}}"],
+							"path": ["api", "minor-wallets", ":id", "fund"],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MINOR_WALLET_ID_HERE"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Chatbot",
+			"item": [
+				{
+					"name": "Send Message to Chatbot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"message\": \"How do I deposit money?\",\n  \"sessionId\": \"optional-session-id\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/chatbot/message",
+							"host": ["{{base_url}}"],
+							"path": ["api", "chatbot", "message"]
+						}
+					}
+				},
+				{
+					"name": "Get Chat History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/chatbot/history?sessionId=session-123",
+							"host": ["{{base_url}}"],
+							"path": ["api", "chatbot", "history"],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "session-123"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Search FAQs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/chatbot/faq/search?query=deposit&category=wallet",
+							"host": ["{{base_url}}"],
+							"path": ["api", "chatbot", "faq", "search"],
+							"query": [
+								{
+									"key": "query",
+									"value": "deposit"
+								},
+								{
+									"key": "category",
+									"value": "wallet"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "auth_token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,564 @@
+{
+  "welcome": "Welcome to Robo Advisor",
+  "hello": "Hello",
+  "getStarted": "Get Started",
+  "skip": "Skip",
+  "next": "Next",
+  "start": "Start",
+  "loading": "Loading...",
+  "home": {
+    "greeting": "Welcome",
+    "subgreeting": "Good to see you again",
+    "portfolioValue": "Portfolio Value",
+    "details": "Details",
+    "returnInfo": "0.00% • Today's Return",
+    "yourInvestments": "Your Investments",
+    "viewMore": "View More",
+    "balancedPortfolio": "Balanced Portfolio",
+    "saudiStockMarket": "Saudi Stock Market",
+    "totalValue": "Total Value",
+    "createPortfolio": "+ Create Portfolio",
+    "manageAccounts": "Manage My Accounts",
+    "manageAccountsDesc": "Check account balances and view account statements",
+    "manageAccountAction": "Manage Accounts",
+    "conversions": "Conversions",
+
+    "receive": "Receive",
+    "receiveDesc": "Transfer your wallet from the current broker to your account",
+    "deposit": "Deposit",
+  "depositDesc": "Transfer to your wallet from your account or the bank.",
+    "waiting": "Waiting",
+    "calculatorTitle": "Dream Calculator",
+    "calculatorDesc": "We want to achieve it!",
+    "accounts": "Accounts",
+    "moreActivities": "More Activities",
+    "accountsTitle": "Accounts",
+    "navHome": "Home",
+    "navPortfolio": "Portfolio",
+    "navConversions": "Conversions",
+    "navAccount": "Account",
+    "notifications": "Notifications",
+    "noNotifications": "No Notifications",
+  "noNotificationsDesc": "You don't have any notifications yet.",
+    "stocksTitle": "Halal Stocks",
+    "stocksDesc": "US stocks screened for Sharia compliance"
+  },
+  "stocks": {
+    "title": "Halal Stocks",
+    "subtitle": "US equities screened for Sharia compliance",
+    "halalLabel": "Halal",
+    "symbol": "Symbol",
+    "price": "Price",
+    "change": "Change",
+    "searchPlaceholder": "Search symbol (e.g. AAPL)",
+    "noResults": "No symbols match your search.",
+    "loading": "Loading stocks...",
+    "empty": "No halal stocks available at the moment.",
+    "errorLoad": "Failed to load stocks. Try again.",
+    "retry": "Retry",
+    "confidence": "Confidence",
+    "zoyaUnavailable": "Halal screening service temporarily unavailable; all shown symbols are treated as halal."
+  },
+  "conversions": {
+    "greeting": "Welcome Ahmed",
+    "subtitle": "Welcome to Fareek",
+    "title": "Conversions",
+    "search": "Search",
+    "all": "All",
+    "deposit": "Deposit",
+    "receive": "Withdraw",
+    "transfer": "Transfer",
+    "receiveTitle": "Receive",
+  "receiveDesc": "From Al Rajhi Bank to your wallet; may arrive on September 18.",
+  "depositTitle": "Deposit",
+  "depositDesc": "From Al Rajhi Bank to your wallet; may arrive on September 18.",
+    "waiting": "Waiting",
+    "receiveWaiting": "Receive · Waiting...",
+    "company": "Company",
+    "method": "Payment Method",
+    "submissionDate": "Submission Date",
+    "download": "Download"
+  },
+  "common": {
+    "loading": "Loading...",
+    "changeLanguage": "Change Language",
+    "language": "Language",
+    "english": "English",
+    "arabic": "Arabic",
+    "next": "Next",
+    "back": "Back",
+    "backToLogin": "Back to Login",
+    "error": "Error",
+    "ok": "OK"
+  },
+  "portfolio": {
+    "title": "Portfolios",
+    "greeting": "Welcome Ahmed",
+    "subtitle": "Welcome to the app",
+  "distributionAndDetails": "Assets Distribution & Details",
+    "balancedFund": "Balanced Fund",
+    "retirementFund": "Retirement Fund",
+    "sukuk": "Sukuk",
+    "stocks": "Stocks",
+  "allocationDescription": "Total distribution of your assets based on the AI recommendation. You can change it at any time.",
+  "fundsTitle": "Al Rajhi Saudi Equity Fund",
+  "balancedSaudiFund": "Al Rajhi Saudi Equity Fund",
+  "sukukFund": "Sukuk",
+    "bonds": "Bonds",
+    "stocksFund": "Stocks",
+  "investmentCount": "Investments {{count}}",
+  "investmentPortfoliosTitle": "My Investment Portfolios",
+    "retirementPortfolio": "Retirement Portfolio",
+  "balancedPortfolioItem": "Ahmed's Portfolio",
+  "yourGoal": "Your Goal",
+  "onTrack": "You're on the right track",
+  "portfolioFundsTitle": "Portfolio Funds",
+  "fundAlRajhiName": "Al Rajhi Saudi Equities Fund",
+  "fundAlRajhiAllocation": "Saudi Equities 5%",
+  "fundSPUSName": "SPUS ETF",
+  "fundSPUSAllocation": "Global Equities 30%",
+    "totalValue": "Total Value",
+    "overview": "Overview",
+    "invested": "Invested",
+    "return": "Return",
+    "recommendations": "Recommendations",
+    "viewAll": "View All",
+    "invest": "Invest",
+    "addFunds": "Add Funds",
+    "viewPortfolio": "View Portfolio",
+    "myPortfolio": "My Portfolio",
+    "search": "Search investments",
+    "totalInvested": "Total Invested",
+    "gain": "Gain",
+    "gainPercent": "Gain %",
+    "holdings": "Holdings",
+    "currentValue": "Current Value",
+    "noResults": "No results found",
+    "clearSearch": "Clear Search",
+    "addInvestment": "Add Investment",
+    "filterOptions": "Filter Options",
+    "sortByReturn": "Sort by Return",
+    "sortByValue": "Sort by Value",
+    "sortByName": "Sort by Name",
+    "done": "Done"
+  },
+  "profile": {
+    "accountInfo": "Account Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "memberSince": "Member Since",
+    "editProfile": "Edit Profile",
+    "preferences": "Preferences",
+    "language": "Language",
+    "notifications": "Notifications",
+  "notificationsDetails": "Enable All Notifications",
+    "pushNotifications": "Push Notifications",
+    "biometric": "Biometric Login",
+    "faceIdTouchId": "Face ID / Touch ID",
+    "darkMode": "Dark Mode",
+    "appearance": "Appearance",
+    "support": "Support & Docs",
+    "helpCenter": "Help Center",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "about": "About App",
+    "logout": "Log Out",
+    "deleteAccount": "Delete Account",
+    "accountTitle": "My Account",
+  "edit": "Edit",
+    "userName": "Osama Awad",
+    "userEmail": "osama@example.com",
+    "settings": "Settings",
+  "notificationBellTitle": "Enable Notifications",
+  "notificationBellDesc": "Receive notifications about important updates",
+  "notificationBankTitle": "Bank Balance",
+  "notificationBankDesc": "Summary of your linked bank balance",
+  "notificationProductTitle": "Product Updates",
+  "notificationProductDesc": "Receive notifications about important product updates",
+  "notificationMarketingTitle": "Marketing News",
+  "notificationMarketingDesc": "Receive marketing and promotional updates",
+    "securityTitle": "Security",
+  "securityAndPrivacy": "Security & Privacy",
+  "accounts": "Accounts",
+  "aboutUs": "About Us",
+    "supportSection": "Support",
+    "version": "Version 1.0.0",
+  "privacyPolicyShort": "Privacy Policy",
+  "termsAndConditions": "Terms & Conditions",
+    "notificationsDesc": "Receive notifications about your activity",
+  "currentAccount": "Current Account",
+  "iban": "IBAN",
+  "ibanValue": "15464645614",
+    "biometricDesc": "Use biometric authentication to login",
+    "darkModeDesc": "Enable dark mode appearance",
+    "changePhoneNumber": "Change Phone Number",
+    "changePassword": "Change Password",
+    "passwordUpdated": "Last updated: 3 months ago",
+    "changePhoneTitle": "Change Phone Number",
+    "changePhoneSubtitle": "Enter your new phone number",
+    "newPhoneNumber": "New Phone Number",
+    "sendVerificationCode": "Send Verification Code",
+    "verifyPhone": "Verify Phone",
+    "enterPin": "Enter PIN",
+    "logoutConfirmTitle": "Log out?",
+    "logoutConfirmDesc": "You will be logged out of the app",
+    "logoutConfirm": "Log Out",
+    "cancel": "Cancel",
+    "deleteConfirmTitle": "Delete Account?",
+    "deleteConfirmDesc": "All your data will be permanently deleted. This action cannot be undone",
+    "deleteConfirm": "Delete Account",
+    "allNotifications": "All Notifications",
+    "allNotificationsDesc": "Enable all notifications",
+    "investmentNotifications": "Investment Notifications",
+    "investmentNotificationsDesc": "Updates about your investments",
+    "portfolioNotifications": "Portfolio Notifications",
+    "portfolioNotificationsDesc": "Portfolio performance updates",
+    "conversionNotifications": "Conversion Notifications",
+    "conversionNotificationsDesc": "Transfer operation notifications",
+    "securityNotifications": "Security Notifications",
+    "securityNotificationsDesc": "Important security alerts"
+    ,
+    "appSecurity": "App Security",
+    "appSecurityStatus": "Status: On",
+    "logoutAllDevices": "Log out from all devices",
+    "logoutAllDevicesDesc": "If any sessions are active, sign out from all devices"
+    ,
+    "changeEmailTitle": "Change Email",
+    "changeEmailSubtitle": "We'll send a confirmation message to the new email to verify it.",
+    "changeEmailLabel": "Email",
+    "changeEmailPlaceholder": "Enter email address",
+    "changeEmailContinue": "Continue"
+    ,
+    "deleteAccountTitle": "Delete Account",
+    "deleteAccountDesc": "We're sorry to see you go. Please tell us why you want to delete your account.",
+    "deleteReason": {
+      "notUsing": "I no longer use my account",
+      "poorService": "Service is not good",
+      "changePhone": "I want to change my phone number",
+      "noIdea": "I don't know how to use it",
+      "notFound": "I couldn't find what I'm looking for",
+      "other": "Other"
+    },
+    "deleteAccountButton": "Delete account"
+  },
+  "onboarding": {
+    "title1": "Smart Portfolio Management",
+    "subtitle1": "Investment Guidance",
+    "description1": "Get personalized investment recommendations based on your financial goals and risk profile.",
+    "title2": "Real-time Market Insights",
+    "subtitle2": "Market Analysis",
+    "description2": "Stay updated with real-time market data and expert analysis to make informed decisions.",
+    "title3": "Secure & Trustworthy",
+    "subtitle3": "Your Security",
+    "description3": "Your financial data is protected with enterprise-grade security measures.",
+    "title4": "Grow Your Wealth",
+    "subtitle4": "Investment Growth",
+    "description4": "Start investing with just a few taps and watch your wealth grow over time."
+  },
+  "createAccount": {
+    "step1": {
+      "title": "Welcome to Wathiq",
+      "subtitle": "How do you want to start",
+      "option": {
+        "guided": "Start Investing",
+        "guidedDesc": "Smart guided setup",
+        "manual": "Start Accounting",
+        "manualDesc": "Manual portfolio setup"
+      }
+    },
+    "step2": {
+      "title": "Let’s fully set up your account",
+      "subtitle": "We comply with Saudi regulations under CMA oversight ensuring your information.",
+      "timeline": {
+        "financial": "Financial assessment",
+        "financialDesc": "Start a financial assessment",
+        "profile1": "Profile & security setup",
+        "profile2": "Profile & security setup",
+        "profileDesc": "Prepare your primary investment profile"
+      }
+    },
+    "step3": {
+      "title": "Let’s fully set up your account",
+      "feature": {
+        "fast": "Register in under 5 minutes & browse",
+        "fastDesc": "Sign up in under 5 minutes and browse curated properties & markets",
+        "secure": "Register in under 5 minutes & browse",
+        "secureDesc": "Sign up in under 5 minutes and browse curated properties & markets"
+      }
+    },
+    "step4": {
+      "title": "What is the primary goal of your investments?",
+      "option": {
+        "income": "Increase income",
+        "retirement": "Retirement savings",
+        "property": "Buy a home or property",
+        "progress": "Progress or advancement",
+        "children": "Children's education",
+        "other": "Other goals"
+      }
+    },
+    "step5": {
+      "title": "When do you expect to withdraw the invested amount?",
+      "option": {
+        "lt1": "Less than 1 year",
+        "1to3": "1 to 3 years",
+        "3to5": "3 to 5 years",
+        "gt5": "More than 5 years"
+      }
+    },
+    "step6": {
+      "title": "How would you describe the amount you plan to invest monthly?",
+      "option": {
+        "high": "High amount that could impact me financially",
+        "medium": "Medium amount but I need to monitor expenses",
+        "low": "Small amount with no impact on my expenses"
+      }
+    },
+    "step7": {
+      "title": "What is your investment objective?",
+      "option": {
+        "growth": "Growth",
+        "preserve": "Capital preservation"
+      }
+    },
+    "step8": {
+      "title": "If you start investing and your portfolio drops the next day, what will you do?",
+      "option": {
+        "immediate": "I will withdraw my money immediately",
+        "longterm": "No problem, my goal is long-term growth"
+      }
+    },
+    "step9": {
+      "title": "Great choice",
+      "edit": "Edit",
+      "subtitle": "Your first portfolio is ready! 🎉",
+      "description": "A balanced portfolio fits your goals",
+      "portfolio": {
+        "balanced": "Balanced Portfolio",
+        "balancedDesc": "Medium risk portfolio suitable for your profile.",
+        "stats": {
+          "expectedReturn": "Expected Annual Return:",
+          "expectedReturnValue": "9.5%",
+          "belowAverage": "Below Historical Market Average:",
+          "belowAverageValue": "9.5%",
+          "aboveAverage": "Above Historical Return Average:",
+          "aboveAverageValue": "9.5%"
+        },
+        "assets": {
+          "bonds": "Bonds",
+          "bondsPercent": "75%",
+          "stocks": "Stocks",
+          "stocksPercent": "75%",
+          "gold": "Gold",
+          "goldPercent": "75%",
+          "reits": "REITs",
+          "reitsPercent": "75%"
+        }
+      },
+      "learnMore": "Learn More",
+      "register": "Register / Login",
+      "waitMessage": "To open an account first"
+      ,"sheet": {
+        "title": "Sukuk",
+        "description": "A balanced allocation aiming for moderate growth with medium risk. Combines fixed-income instruments like sukuk/bonds with higher-return investments like equities. Suggested split: 60% equities, 40% sukuk & stable assets to balance growth and capital preservation.",
+        "question": "What if you invested 10,000 SAR in December 2020?",
+        "confirm": "Okay",
+        "year2020": "2020",
+        "year2022": "2022",
+        "year2023": "2023",
+        "year2024": "2024",
+        "year2025": "2025"
+      },
+      "portfolioSheet": {
+        "title": "Balanced Portfolio",
+        "description": "A balanced portfolio aims for moderate growth with a medium risk profile. It blends stable return assets like bonds with higher potential return equities. Suggested mix: 60% equities, 40% fixed income providing a balance between growth and capital preservation.",
+        "question": "What if you invested 10,000 SAR in December 2020?",
+        "expectedValueLabel": "Projected Portfolio Value",
+        "expectedValue": "12,792.00 SAR",
+        "expectedReturnLabel": "Expected Return",
+        "expectedReturnValue": "12.50%",
+        "historicalBestLabel": "Highest Historical Annual Return",
+        "historicalBestValue": "27.92%",
+        "averageAnnualLabel": "Average Annual Return",
+        "averageAnnualValue": "27.92%",
+        "fundsHeading": "Portfolio Funds",
+        "fund1Name": "Al Rajhi Saudi Equities Fund",
+        "fund1Allocation": "Saudi Equities 5%",
+        "fund2Name": "SPUS ETF",
+        "fund2Allocation": "Global Equities 30%",
+        "confirm": "Close"
+      }
+    },
+    "step10": {
+      "title": "Adjust Allocation",
+      "description": "Manually distribute your money across investment categories. You can tweak the percentages to match your goals",
+      "remaining": "Remaining 0%",
+      "reset": "Reset",
+      "asset": {
+        "bonds": "Bonds",
+        "stocks": "Stocks",
+        "gold": "Gold",
+        "reits": "REITs"
+      },
+      "save": "Save"
+    },
+    "step11": {
+      "title": "Let's complete your account setup!",
+      "subtitle": "Committed to Saudi laws, supervised by the Capital Market Authority, and ensuring your information.",
+      "timeline": {
+        "step1": "Financial Assessment",
+        "step1Desc": "Start financial assessment",
+        "step2": "Profile and Security Setup",
+        "step2Desc": "Set up your main investment profile",
+        "step3": "Profile and Security Setup",
+        "step3Desc": "Set up your main investment profile"
+      }
+    },
+    "step12": {
+      "title": "Phone Number",
+      "subtitle": "Enter the phone number you wish to use",
+      "placeholder": "322828558",
+      "googleSignIn": "Continue with Google",
+      "continue": "Continue",
+      "or": "or",
+      "consentSheet": {
+        "title": "To link this institution, you must agree to the applicable terms",
+        "description": "By clicking \"Agree and Continue\" you agree to the link service terms of this institution.",
+        "details": "By linking your account, you grant Waslat permission to process your account data in accordance with the privacy policy and usage model applicable to the applicable institutions",
+        "agree": "Agree & Continue",
+        "cancel": "Cancel"
+      }
+    },
+    "step13": {
+      "title": "Create Password",
+      "subtitle": "An additional step to protect your data",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter password",
+        "requirement1": "At least 8 characters",
+        "requirement2": "At least one number",
+        "requirement3": "At least one special character (@%$#&...)",
+        "requirement4": "At least one uppercase and lowercase letter"
+    },
+    "step14": {
+      "title": "Enter the verification code sent to your phone",
+      "subtitle": "to complete registration.",
+      "sentPrefix": "Code sent to number",
+      "resend": "Resend",
+      "notReceived": "Didn't receive the code?",
+      "error": "Code incorrect, start verification again.",
+      "verify": "Verify"
+    },
+    "step15": {
+      "title": "Account Successfully Opened",
+      "subtitle": "Committed to Saudi laws, supervised by the Capital Market Authority, and ensuring your information.",
+      "continue": "Continue"
+    },
+    "step16": {
+      "title": "Let's complete your account setup in detail!",
+      "subtitle": "Committed to Saudi laws, supervised by the Capital Market Authority, and ensuring your information.",
+      "feature1": "Register in less than 3 minutes and browse",
+      "feature1Desc": "Register in less than 3 minutes and browse our property collection and funds",
+      "feature2": "Register in less than 3 minutes and browse",
+      "feature2Desc": "Register in less than 3 minutes and browse our property collection and funds",
+      "next": "Next"
+    },
+    "step17": {
+      "title": "Identity Verification",
+      "subtitle": "Enter your National ID or Iqama number",
+      "inputLabel": "National ID / Iqama",
+      "inputPlaceholder": "e.g., 1234567890",
+      "continue": "Continue"
+    },
+    "step18": {
+      "title": "Enter the verification code sent to your phone",
+      "subtitle": "to continue identity verification.",
+      "resend": "Resend",
+      "notReceived": "Didn't receive the code?",
+      "error": "Code incorrect, start verification again.",
+      "verify": "Verify"
+    },
+    "step19": {
+      "title": "Identity Verified",
+      "subtitle": "Your identity has been successfully confirmed.",
+      "continue": "Continue"
+    },
+    "step20": {
+      "title": "Final steps",
+      "subtitle": "Here's what's next to get you started",
+      "timeline": {
+        "step1": "Document upload",
+        "step1Desc": "Upload required documents",
+        "step2": "Profile review",
+        "step2Desc": "We'll review your information",
+        "step3": "Start investing",
+        "step3Desc": "You're ready to go"
+      }
+    },
+    "step21": {
+      "title": "Link your bank account",
+      "subtitle": "Enter details to link your account",
+      "wahiqLabel": "Enter Wahiq number",
+      "wahiqPlaceholder": "Enter Wahiq number",
+      "ibanLabel": "IBAN number",
+      "ibanPlaceholder": "IBAN number",
+      "note": "IBAN must contain at least 22 characters",
+      "continue": "Continue"
+    },
+    "step22": {
+      "title": "Enter the verification code sent to your phone",
+      "subtitle": "to complete registration.",
+      "resend": "Resend",
+      "notReceived": "Didn't receive the code?",
+      "error": "Code incorrect, start verification again.",
+      "verify": "Verify"
+    },
+    "step23": {
+      "title": "Verification Failed",
+      "subtitle": "Verification failed from IBAN. Please verify the data entered again.",
+      "retry": "Retry Again"
+    },
+    "step24": {
+      "title": "Linked Successfully",
+      "subtitle": "Committed to Saudi laws, supervised by the Capital Market Authority, and ensuring your information.",
+      "sectionTitle": "Bank Information",
+      "fullName": "Full Name",
+      "fullNameValue": "Osama Awad",
+      "wahiqNumber": "Wahiq Number",
+      "continue": "Continue"
+    },
+    "step25": {
+      "title": "How much do you want to transfer?",
+      "from": "From",
+      "fromBank": "Transfer from Al Rajhi Bank",
+      "to": "To",
+      "toPortfolio": "To your portfolio (medium risk)",
+      "frequencyLabel": "Recurrence rate",
+      "frequency": {
+        "monthly": "Monthly",
+        "quarterly": "Quarterly",
+        "yearly": "Yearly"
+      },
+      "timesLabel": "Number of times during the period",
+      "times": {
+        "once-per-month": "Once every month",
+        "twice-per-month": "Twice every month",
+        "weekly": "Weekly"
+      },
+      "amountLabel": "Amount",
+      "next": "Next"
+    },
+    "step26": {
+      "title": "Review your transfer",
+      "fromLabel": "From",
+      "toLabel": "To",
+      "amountLabel": "Amount",
+      "next": "Next"
+    },
+    "step27": {
+      "title": "Portfolio Transfer Successful",
+      "subtitle": "Committed to Saudi laws, supervised by the Capital Market Authority, and ensuring your information.",
+      "continue": "Continue"
+    }
+  }
+}

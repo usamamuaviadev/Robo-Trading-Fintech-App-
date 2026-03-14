@@ -1,0 +1,579 @@
+{
+  "welcome": "مرحبا بكم معنا",
+  "hello": "أهلاً",
+  "getStarted": "ابدأ الآن",
+  "skip": "تخطي",
+  "next": "التالي",
+  "start": "ابدأ",
+  "loading": "جاري التحميل...",
+  "login": "تسجيل الدخول",
+  "home": {
+    "greeting": "مرحبا أسامة",
+    "subgreeting": "حياك في رفيق  ",
+    "portfolioValue": "قيمة المحفظة الخاصة بك",
+    "details": "+ ايداع",
+    "returnInfo": "العائد اليومي",
+    "yourInvestments": "استثماراتك",
+    "viewMore": "رؤية المزيد",
+    "balancedPortfolio": "محفظة موازنة",
+    "saudiStockMarket": "محفظة سوق السعودي",
+    "totalValue": "إجمالي",
+    "createPortfolio": "+ إنشاء محفظة",
+    "manageAccounts": "حساباتك اتطلعاتك",
+    "manageAccountsDesc": "  أنشئ حساب لاطفلك و قم بضمان مستقبلهم",
+    "manageAccountAction":"أنشئ حساب لاطفالك",
+    "conversions": "تحويلات",
+    "receive": "إستقبال",
+    "receiveDesc": "من خارج النقل الى حساباتك ال محفظاتك",
+    "deposit": "إيداع",
+    "depositDesc": "من شباكي إلى حساباتك أو جداداتك إلى 17 أول جدادة",
+    "waiting": "انتظار",
+    "calculatorTitle": "حاسبة الأحلام",
+    "calculatorDesc": "كيف تريد أحلامك!",
+    "accounts": "حسابات",
+    "moreActivities": "نشاط الأكثر",
+    "accountsTitle": "حسابات",
+    "navHome": "الرئيسية",
+    "navPortfolio": "المحافظ",
+    "navConversions": "تحويلات",
+    "navAccount": "الحساب",
+    "notifications": "الاشعارات",
+    "noNotifications": "لا توجد إشعارات",
+    "noNotificationsDesc": "ليس لديك أي إشعارات حتى الآن",
+    "stocksTitle": "أسهم حلال",
+    "stocksDesc": "أسهم أمريكية مُحققة للمطابقة الشرعية"
+  },
+  "stocks": {
+    "title": "أسهم حلال",
+    "subtitle": "أسهم أمريكية مُحققة للمطابقة الشرعية",
+    "halalLabel": "حلال",
+    "symbol": "الرمز",
+    "price": "السعر",
+    "change": "التغيّر",
+    "searchPlaceholder": "ابحث بالرمز (مثلاً AAPL)",
+    "noResults": "لا توجد رموز تطابق البحث.",
+    "loading": "جاري تحميل الأسهم...",
+    "empty": "لا توجد أسهم حلال متاحة حالياً.",
+    "errorLoad": "فشل تحميل الأسهم. حاول مرة أخرى.",
+    "retry": "إعادة المحاولة",
+    "confidence": "الثقة",
+    "zoyaUnavailable": "خدمة التحقق الحلال غير متاحة مؤقتاً؛ جميع الرموز المعروضة تُعامل كحلال."
+  },
+  "conversions": {
+    "greeting": "مرحبا أسامة",
+    "subtitle": "حياك في فريق",
+    "title": "تحويلات",
+    "search": "بحث",
+    "all": "الكل",
+    "deposit": "إيداع",
+    "receive": "سحب",
+    "transfer": "تحويل",
+    "receiveTitle": "إرسال",
+    "receiveDesc": "من البنك راجحي الي محفظتك، ممكن تصل في 18 سبتمبر",
+    "depositTitle": "إيداع",
+    "depositDesc": "من البنك راجحي الي محفظتك، ممكن تصل في 18 سبتمبر",
+    "waiting": "انتظار",
+    "receiveWaiting": "إرسال · انتظار...",
+    "company": "الشركة",
+    "method": "طريقة الدفع",
+    "submissionDate": "تاريخ التقديم",
+    "download": "تحميل"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "changeLanguage": "تغيير اللغة",
+    "language": "اللغة",
+    "english": "English",
+    "arabic": "العربية",
+    "next": "التالي",
+    "back": "رجوع",
+    "backToLogin": "العودة لصفحة الدخول",
+    "error": "خطأ",
+    "ok": "موافق"
+  },
+  "portfolio": {
+    "title": "المحافظ",
+    "greeting": "مرحبا أسامة",
+    "subtitle": "حياك في تطبيق",
+    "distributionAndDetails": "توزيع الأصول والتفصيل",
+    "balancedFund": "صندوق متوازن",
+    "retirementFund": "صندوق تقاعدي",
+    "sukuk": "صكوك",
+    "stocks": "الأسهم",
+  "allocationDescription": "إجمالي توزيع أصولك حسب توصية الذكاء الاصطناعي من ميدلاس. يمكنك التغيير في أي وقت.",
+  "fundsTitle": "صندوق الراجحي للأسهم السعودية",
+  "balancedSaudiFund": "صندوق الراجحي للأسهم السعودية",
+  "sukukFund": "صكوك",
+    "bonds": "السندات",
+    "stocksFund": "الأسهم",
+  "investmentCount": "استثمارات {{count}}",
+  "investmentPortfoliosTitle": "محفظتي الاستثمارية",
+    "retirementPortfolio": "محفظة التقاعد",
+  "balancedPortfolioItem": "محفظة أسامة",
+  "yourGoal": "هدفك",
+  "onTrack": "أنت في طريق صحيح",
+  "portfolioFundsTitle": "صناديق المحفظة",
+  "fundAlRajhiName": "صندوق الراجحي للأسهم السعودية",
+  "fundAlRajhiAllocation": "%5 الأسهم السعودية",
+  "fundSPUSName": "SPUS ETF",
+  "fundSPUSAllocation": "%30 الأسهم العالمية",
+    "totalValue": "القيمة الإجمالية",
+    "overview": "نظرة عامة",
+    "invested": "المستثمر",
+    "return": "العائد",
+    "recommendations": "التوصيات",
+    "viewAll": "عرض الكل",
+    "invest": "استثمر",
+    "addFunds": "إضافة أموال",
+    "viewPortfolio": "عرض المحفظة",
+    "myPortfolio": "محفظتي",
+    "search": "ابحث عن الاستثمارات",
+    "totalInvested": "إجمالي الاستثمار",
+    "gain": "الربح",
+      "sheet": {
+        "title": "صكوك",
+        "description": "محفظة متوازنة تهدف لتحقيق نمو معتدل مع مستوى مخاطر متوسط. تجمع بين الاستثمارات ذات العوائد الثابتة مثل السندات، والاستثمارات ذات العوائد المرتفعة مثل الأسهم. التوزيع المقترح: ٪٦٠ أسهم، ٪٤٠ سندات وأصول ثابتة مما يوفر توازن بين النمو والحفاظ على رأس المال",
+        "question": "ماذا لو استثمرت 10,000 ريال سعودي في ديسمبر 2020؟",
+        "confirm": "حسناً",
+        "year2020": "2020",
+        "year2022": "2022",
+        "year2023": "2023",
+        "year2024": "2024",
+        "year2025": "2025"
+      },
+    "gainPercent": "نسبة الربح",
+    "holdings": "الممتلكات",
+    "currentValue": "القيمة الحالية",
+    "noResults": "لا توجد نتائج",
+    "clearSearch": "مسح البحث",
+    "addInvestment": "إضافة استثمار",
+    "filterOptions": "خيارات الفرز",
+    "sortByReturn": "فرز حسب العائد",
+    "sortByValue": "فرز حسب القيمة",
+    "sortByName": "فرز حسب الاسم",
+    "done": "تم"
+  },
+  "profile": {
+    "accountInfo": "معلومات الحساب",
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "memberSince": "عضو منذ",
+    "editProfile": "تعديل الحساب",
+    "preferences": "التفضيلات",
+    "language": "اللغة",
+    "notifications": "الإشعارات",
+    "notificationsDetails": "تفعيل جميع الإشعارات",
+    "pushNotifications": "إشعارات الدفع",
+    "biometric": "تسجيل الدخول الحيوي",
+    "faceIdTouchId": "بصمة الوجه / بصمة الإصبع",
+    "darkMode": "الوضع الليلي",
+    "appearance": "المظهر",
+    "support": "الدعم والوثائق",
+    "helpCenter": "مركز المساعدة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "الشروط والأحكام",
+    "about": "حول التطبيق",
+    "logout": "تسجيل الخروج",
+    "deleteAccount": "حذف الحساب",
+    "accountTitle": "حسابي",
+  "edit": "تعديل",
+  "profileChangeNotice":"لتغير الاسم من فضلك تواصل مهنا على الايميل ",
+    "userName": "أسامة عواد",
+    "userEmail": "osama@example.com",
+    "settings": "الإعدادات",
+  "notificationBellTitle": "تفعيل الإشعارات",
+  "notificationBellDesc": "تلقي إشعارات حول التحديثات الهامة",
+  "notificationBankTitle": "رصيد البنك",
+  "notificationBankDesc": "ملخص عن رصيدك البنكي المرتبط",
+  "notificationProductTitle": "تحديثات المنتج",
+  "notificationProductDesc": "تلقي إشعارات حول التحديثات المهمة للمنتج",
+  "notificationMarketingTitle": "أخبار تسويقية",
+  "notificationMarketingDesc": "تلقي أخبار وعروض تسويقية",
+  "enableAllNotifications": "تفعيل جميع الإشعارات",
+  "enableAllNotificationsDesc": "تفعيل أو إيقاف كل الإشعارات",
+  "notificationsHeader": "الاشعارات",
+    "securityTitle": "الأمان",
+  "securityAndPrivacy": "الأمان والخصوصية",
+  "accounts": "الحسابات",
+  "aboutUs": "نبذة عنا",
+    "supportSection": "الدعم",
+    "version": "  الإصدار 1.0.0",
+  "privacyPolicyShort": "سياسة الخصوصية",
+  "termsAndConditions": "الشروط والأحكام",
+    "notificationsDesc": "تلقي إشعارات حول نشاطك",
+  "currentAccount": "الحساب الجاري",
+  "iban": "IBAN",
+  "ibanValue": "15464645614",
+    "biometricDesc": "استخدام البصمة لتسجيل الدخول",
+    "darkModeDesc": "تفعيل الوضع الداكن",
+    "changePhoneNumber": "تغيير رقم الهاتف",
+    "changePassword": "تغيير كلمة المرور",
+    "passwordUpdated": "آخر تحديث: منذ 3 أشهر",
+    "changePhoneTitle": "تغيير رقم الهاتف",
+    "changePhoneSubtitle": "أدخل رقم الهاتف الجديد",
+    "newPhoneNumber": "رقم الهاتف الجديد",
+    "sendVerificationCode": "إرسال رمز التحقق",
+    "verifyPhone": "تحقق من رقم الهاتف",
+    "enterPin": "أدخل رمز PIN",
+    "logoutConfirmTitle": " أوه. لا هل انت مغادر؟ ",
+    "logoutConfirmDesc": " هل انت متاكد من انك تريد المغادرة؟ ",
+    "logoutConfirm": "تسجيل الخروج",
+    "cancel": "ليس الأن",
+    "deleteConfirmTitle": "حذف الحساب؟",
+    "deleteConfirmDesc": "سيتم حذف جميع بياناتك بشكل نهائي. هذا الإجراء لا يمكن التراجع عنه",
+    "deleteConfirm": "حذف الحساب",
+    "allNotifications": "جميع الإشعارات",
+    "allNotificationsDesc": "تفعيل جميع الإشعارات",
+    "investmentNotifications": "إشعارات الاستثمار",
+    "investmentNotificationsDesc": "تحديثات حول استثماراتك",
+    "portfolioNotifications": "إشعارات المحفظة",
+    "portfolioNotificationsDesc": "تحديثات أداء المحفظة",
+    "conversionNotifications": "إشعارات التحويلات",
+    "conversionNotificationsDesc": "إشعارات عمليات التحويل",
+    "securityNotifications": "إشعارات الأمان",
+    "securityNotificationsDesc": "تنبيهات الأمان المهمة"
+    ,
+    "appSecurity": "تطبيق الأمان",
+    "appSecurityStatus": "الحالة: مشغل",
+    "logoutAllDevices": "الخروج من جميع الأجهزة",
+    "logoutAllDevicesDesc": "إذا كانت هناك أي جلسات نشطة، سجل خروج من جميع الأجهزة"
+    ,
+    "changeEmailTitle": "تغيير الإيميل",
+    "changeEmailSubtitle": "سوف نرسل رسالة إلى الإيميل الجديد لتأكيده",
+    "changeEmailLabel": "الإيميل",
+    "changeEmailPlaceholder": "أدخل البريد الإلكتروني",
+    "changeEmailContinue": "متابعة"
+    ,
+    "deleteAccountTitle": "حذف الحساب",
+    "deleteAccountDesc": "نحن حقاً نأسف لرغبتك بالمغادرة. من فضلك أخبرنا لماذا تريد حذف الحساب.",
+    "deleteReason": {
+      "notUsing": "لم أعد أستخدم حسابي بعد الآن",
+      "poorService": "الخدمة ليست جيدة",
+      "changePhone": "أريد تغيير رقم هاتفي",
+      "noIdea": "لا أعرف كيف أستخدمها",
+      "notFound": "لم أجد ما أبحث عنه",
+      "other": "أخرى"
+    },
+    "deleteAccountButton": "حذف الحساب"
+  },
+  "onboarding": {
+    "title1": "نظرة عامة على المحفظة",
+    "subtitle1": "إرشادات الاستثمار",
+    "description1": "احصل على توصيات استثمارية واقعية ومخصصة تناسب أهدافك.",
+    "title2":"إمكانية إخراج الزكاة",
+    "subtitle2": "تحليل السوق",
+    "description2": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+    "title3": "موازنة البروتوكول",
+    "subtitle3": "أمنك المالي",
+    "description3": "انضم إلينا الآن ويمكنك بدء الاستثمار بسهولة.",
+    "title4": "زيادة ثروتك",
+    "subtitle4": "نمو الاستثمار",
+    "description4":"منصة عربية سعودية مدعومة بالذكاء الاصطناعي تساعدك تصنع مستقبلك المالي."
+  }
+  ,"createAccount": {
+    "step1": {
+      "title": "حياك في وثيق",
+      "subtitle": "كيف تريد البدأ",
+      "option": {
+        "guided": "بدأ بالاستثمار",
+        "guidedDesc": "كيف تريد البدأ",
+        "manual": "بدأ بالمحاسبة",
+        "manualDesc": "كيف تريد البدأ"
+      }
+    },
+    "step2": {
+      "title": "دعنا نكمل إعداد حسابك بالكامل",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "timeline": {
+        "financial": "تقييم مالي",
+        "financialDesc": "ابدا تقييم مالي",
+        "profile1": "إعداد الملف الشخصي والضمان",
+        "profile2": "إعداد الملف الشخصي والضمان",
+        "profileDesc": "قم بإعداد ملف استثمارك الرئيسي"
+      }
+    },
+    "step3": {
+      "title": "دعنا نكمل إعداد حسابك بالكامل",
+      "feature": {
+        "fast": "قم بالتسجيل في أقل من 5 دقائق وتصفح",
+        "fastDesc": "قم بالتسجيل في أقل من 5 دقائق وتصفح مجموعتنا العقارية والمناطق",
+        "secure": "قم بالتسجيل في أقل من 5 دقائق وتصفح",
+        "secureDesc": "قم بالتسجيل في أقل من 5 دقائق وتصفح مجموعتنا العقارية والمناطق"
+      }
+    },
+    "step4": {
+      "title": "ما هو الهدف الأساسي من استثماراتك؟",
+      "option": {
+        "income": "زيادة الدخل",
+        "retirement": "الادخار للتقاعد",
+        "property": "شراء منزل أو عقار",
+        "progress": "التحرج أو القدمة",
+        "children": "تعليم الأبناء",
+        "other": "أهداف أخرى"
+      }
+    },
+    "step5": {
+      "title": "متى تتوقع سحب المبلغ المجمول؟",
+      "option": {
+        "lt1": "أقل من سنة",
+        "1to3": "من سنة إلى 3 سنوات",
+        "3to5": "من 3 إلى 5 سنوات",
+        "gt5": "أكثر من 5 سنوات"
+      }
+    },
+    "step6": {
+      "title": "كيف تصف المبلغ الي تخطط توقعه شهرياً؟",
+      "option": {
+        "high": "المبلغ عالي وممكن يخضطي مالياً",
+        "medium": "المبلغ متوسط بس احتاج أراقب مصاريفي",
+        "low": "المبلغ بسيط وما يأثر على مصاريفي"
+      }
+    },
+    "step7": {
+      "title": "ما هو هدف استثمارك؟",
+      "option": {
+        "growth": "النمو",
+        "preserve": "المحافظة على رأس المال"
+      }
+    },
+    "step8": {
+      "title": "إذا بدأت الاستثمار وانخفضت محفظتك في اليوم التالي، ماذا ستفعل؟",
+      "option": {
+        "immediate": "سأسحب أموالي مباشرة",
+        "longterm": "لا بأس هدفي هو النمو على المدى الطويل"
+      }
+    },
+    "step9": {
+      "title": "خيار رائع",
+      "edit": "تعديل",
+      "subtitle": "محفظتك الأولى جاهزة! 🎉",
+      "description": "محفظة متوازنة تناسب أهدافك",
+      "portfolio": {
+        "balanced": "محفظة متوازنة",
+        "balancedDesc": "محفظة متوسطة المخاطر بتوزيع متنوع...",
+        "stats": {
+          "expectedReturn": "العائد السنوي المتوسط:",
+          "expectedReturnValue": "٪9.43",
+          "belowAverage": "أقل من متوسط السوق التاريخي:",
+          "belowAverageValue": "٪9.43",
+          "aboveAverage": "أعلى من متوسط العائد التاريخي:",
+          "aboveAverageValue": "٪9.43"
+        },
+        "assets": {
+          "bonds": "صكوك",
+          "bondsPercent": "٪٧٥",
+          "stocks": "أسهم",
+          "stocksPercent": "٪٧٥",
+          "gold": "ذهب",
+          "goldPercent": "٪٧٥",
+          "reits": "ذهب",
+          "reitsPercent": "٪٧٥"
+        }
+      },
+      "learnMore": "المزيد من التفاصيل",
+      "register": "تسجيل الدخول",
+      "waitMessage": "عشان تبدي حساب أولاً",
+      "sheet": {
+        "title": "صكوك",
+        "description": "محفظة متوازنة تهدف لتحقيق نمو معتدل مع مستوى مخاطر متوسط. تجمع بين الاستثمارات ذات العوائد الثابتة مثل السندات، والاستثمارات ذات العوائد المرتفعة مثل الأسهم. التوزيع المقترح: ٪٦٠ أسهم، ٪٤٠ سندات وأصول ثابتة مما يوفر توازن بين النمو والحفاظ على رأس المال",
+        "question": "ماذا لو استثمرت 10,000 ريال سعودي في ديسمبر 2020؟",
+        "confirm": "حسناً",
+        "year2020": "2020",
+        "year2022": "2022",
+        "year2023": "2023",
+        "year2024": "2024",
+        "year2025": "2025"
+      },
+      "portfolioSheet": {
+        "title": "محفظة متوازنة",
+        "description": "محفظة متوازنة تهدف لتحقيق نمو معتدل مع مستوى مخاطر متوسط. تجمع بين استثمارات ذات عوائد ثابتة مثل السندات مع أسهم ذات عوائد أعلى. التوزيع المقترح: ٪٦٠ أسهم، ٪٤٠ دخل ثابت لتحقيق توازن بين النمو والحفاظ على رأس المال.",
+        "question": "ماذا لو استثمرت 10,000 ريال سعودي في ديسمبر 2020؟",
+        "expectedValueLabel": "قيمة المحفظة المتوقعة",
+        "expectedValue": "12,792.00 SAR",
+        "expectedReturnLabel": "العائد المتوقع",
+        "expectedReturnValue": "٪12.50",
+        "historicalBestLabel": "أعلى عائد سنوي تاريخي",
+        "historicalBestValue": "٪27.92",
+        "averageAnnualLabel": "العائد السنوي المتوسط",
+        "averageAnnualValue": "٪27.92",
+        "fundsHeading": "صناديق المحفظة",
+        "fund1Name": "صندوق الراجحي للأسهم السعودية",
+        "fund1Allocation": "الأسهم السعودية ٪5",
+        "fund2Name": "SPUS ETF",
+        "fund2Allocation": "الأسهم العالمية ٪30",
+        "confirm": "حسناً"
+      }
+    },
+    "step10": {
+      "title": "تعديل التوزيع",
+      "description": "قم بتوزيع أموالك يدويًا على فئات الاستثمار حسب رغبتك. يمكنك تعديل النسب بما يتناسب مع أهدافك",
+      "remaining": "الباقي ٪٠",
+      "reset": "إعادة",
+      "asset": {
+        "bonds": "سندات",
+        "stocks": "أسهم",
+        "gold": "ذهب",
+        "reits": "ذهب"
+      },
+      "save": "حفظ"
+    },
+    "step11": {
+      "title": "دعنا نكمل إعداد حسابك بالكامل!",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "timeline": {
+        "step1": "تقييم مالي",
+        "step1Desc": "ابدا تقييم مالي",
+        "step2": "إعداد الملف الشخصي والأمان",
+        "step2Desc": "قم بإعداد ملف استثمارك الرئيسي",
+        "step3": "إعداد الملف الشخصي والأمان",
+        "step3Desc": "قم بإعداد ملف استثمارك الرئيسي"
+      }
+    },
+    "step12": {
+      "title": "رقم الهاتف",
+      "subtitle": "ادخل رقم الهاتف الذي ترغب في استخدامه",
+      "placeholder": "322828558",
+      "googleSignIn": "تابع باستخدام جوجل",
+      "continue": "متابعة",
+      "or": "أو",
+      "consentSheet": {
+        "title": "لربط هذه المؤسسة، يجب أن توافق على الشروط المعمول به",
+        "description": "النقر على \"موافقة ومتابعة\" فإنك توافق على شروط خدمة الربط الخاصة بهذه المؤسسة.",
+        "details": "من خلال ربط حسابك فإنك تمنح وصلات الإذن بمعالجة بيانات حسابك وفقاً لسياسة الخصوصية ونموذج الاستخدام الخاصة بمصات المعمول بها",
+        "agree": "الموافقة و متابعة",
+        "cancel": "إلغاء"
+      }
+    },
+    "step13": {
+      "title": "إنشاء كلمة مرور",
+      "subtitle": "إجراء إضافي لحماية بياناتك",
+        "passwordLabel": "كلمة المرور",
+        "passwordPlaceholder": "ادخل كلمة المرور",
+        "requirement1": "لا يحتوى على الأقل",
+        "requirement2": "يتم تباعد على الأقل",
+        "requirement3": "يحتوي خاص واحد على الأقل (@%$#&...)",
+        "requirement4": "حرف كبير وحرف على الأقل"
+    },
+    "step14": {
+      "title": "أدخل رمز التحقق المرسل على جوالك",
+      "subtitle": "لإكمال عملية التسجيل.",
+      "sentPrefix": "تم إرسال الرمز إلى الرقم",
+      "resend": "أعد الإرسال",
+      "notReceived": "لم تستقبل الرمز؟",
+      "error": "الرمز خاطئ، ابدأ التحقق مجدداً.",
+      "verify": "تحقق"
+    },
+    "step15": {
+      "title": "تم فتح الحساب بنجاح",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "continue": "متابعة"
+    },
+    "step16": {
+      "title": "دعنا نكمل إعداد حسابك بالتفاصيل!",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "feature1": "قم بالتسجيل في أقل من 3 دقائق وتصفح",
+      "feature1Desc": "قم بالتسجيل في أقل من 3 دقائق وتصفح مجموعتنا العقارية والصناديق",
+      "feature2": "قم بالتسجيل في أقل من 3 دقائق وتصفح",
+      "feature2Desc": "قم بالتسجيل في أقل من 3 دقائق وتصفح مجموعتنا العقارية والصناديق",
+      "next": "التالي"
+    },
+    "step17": {
+      "title": "التحقق من الهوية",
+      "subtitle": "أدخل رقم الهوية الوطنية أو الإقامة",
+      "inputLabel": "الهوية الوطنية / الإقامة",
+      "inputPlaceholder": "مثال: 1234567890",
+      "continue": "متابعة"
+    },
+    "step18": {
+      "title": "أدخل رمز التحقق المرسل على جوالك",
+      "subtitle": "لاستكمال التحقق من الهوية.",
+      "resend": "أعد الإرسال",
+      "notReceived": "لم تستقبل الرمز؟",
+      "error": "الرمز خاطئ، ابدأ التحقق مجددًا.",
+      "verify": "تحقق"
+    },
+    "step19": {
+      "title": "تم التحقق من الهوية",
+      "subtitle": "تم التأكد من هويتك بنجاح.",
+      "continue": "متابعة"
+    },
+    "step20": {
+      "title": "الخطوات الأخيرة",
+      "subtitle": "هذه الخطوات التالية لتبدأ",
+      "timeline": {
+        "step1": "رفع المستندات",
+        "step1Desc": "ارفع المستندات المطلوبة",
+        "step2": "مراجعة الملف",
+        "step2Desc": "سنراجع معلوماتك",
+        "step3": "ابدأ الاستثمار",
+        "step3Desc": "أنت جاهز للانطلاق"
+      }
+    },
+    "step21": {
+      "title": "قم بربط حسابك البنكي",
+      "subtitle": "الرجاء ادخال تفاصيل الوثيقة",
+      "wahiqLabel": "أدخل رقم الوثيقة",
+      "wahiqPlaceholder": "أدخل رقم الوثيقة",
+      "ibanLabel": "رقم IBAN",
+      "ibanPlaceholder": "رقم IBAN",
+      "note": "يجب أن يحتوي رقم الآيبان على 22 حالة",
+      "continue": "متابعة"
+    },
+    "step22": {
+      "title": "أدخل رمز التحقق المرسل على جوالك",
+      "subtitle": "لإكمال عملية التسجيل.",
+      "resend": "أعد الإرسال",
+      "notReceived": "لم تستقبل الرمز؟",
+      "error": "الرمز خاطئ، ابدأ التحقق مجددًا.",
+      "verify": "تحقق"
+    },
+    "step23": {
+      "title": "فشلت عملية التحقق",
+      "subtitle": "فشلت عملية التحقق من الـIBAN الخاص بك. يرجى التأكد من المعلومات المدخلة",
+      "retry": "أعد المحاولة مجددا"
+    },
+    "step24": {
+      "title": "تم الربط بنجاح",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "sectionTitle": "معلومات البنك",
+      "fullName": "الاسم الكامل",
+      "fullNameValue": "اسامة عوض",
+      "wahiqNumber": "رقم الوثيقة",
+      "continue": "متابعة"
+    },
+    "step25": {
+      "title": "كم ترغب في تحويلها",
+      "from": "من",
+      "fromBank": "تحويل من بنك الراجحي",
+      "to": "الى",
+      "toPortfolio": "الى محفظتك (متوسطة المخاطر)",
+      "frequencyLabel": "معدل التكرار",
+      "frequency": {
+        "monthly": "شهريا",
+        "quarterly": "ربع سنوي",
+        "yearly": "سنوي"
+      },
+      "timesLabel": "عدد المرات خلال الفترة",
+      "times": {
+        "once-per-month": "مرة في كل شهر",
+        "twice-per-month": "مرتين في كل شهر",
+        "weekly": "اسبوعيا"
+      },
+      "amountLabel": "المبلغ",
+      "next": "التالي"
+    },
+    "step26": {
+      "title": "مراجعة التحويلك",
+      "fromLabel": "من",
+      "toLabel": "الى",
+      "amountLabel": "المبلغ",
+      "next": "التالي"
+    },
+    "step27": {
+      "title": "تم تحويل محفظة بالنجاح",
+      "subtitle": "ملتزمون بالقوانين السعودية وبإشراف هيئة السوق المالية وضمان معلوماتك.",
+      "continue": "متابعة"
+    }
+  }
+}
